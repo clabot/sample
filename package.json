@@ -1,0 +1,44 @@
+{
+  "name": "clabot-sample",
+  "description": "This is a sample clabot implementation powering the sandbox",
+  "version": "0.0.0",
+  "homepage": "https://github.com/clabot/clabot",
+  "author": {
+    "name": "Stephan Bönnemann",
+    "email": "clabot@excellenteasy.com",
+    "url": "http://excellenteasy.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/clabot/sample.git"
+  },
+  "bugs": {
+    "url": "https://github.com/clabot/sample/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/clabot/sample/blob/master/LICENSE"
+    }
+  ],
+  "main": "src/clabot-sample.js",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "postinstall": "grunt coffee"
+  },
+  "dependencies": {
+    "clabot": "0.0.3",
+    "grunt-cli": "0.1.6",
+    "grunt": "~0.4.0",
+    "grunt-contrib-coffee": "~0.6.2"
+  },
+  "keywords": [
+    "CLA",
+    "License",
+    "Contribution",
+    "Bot",
+    "GitHub"
+  ]
+}

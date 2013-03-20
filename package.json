@@ -29,7 +29,7 @@
     "postinstall": "grunt coffee"
   },
   "dependencies": {
-    "clabot": "0.0.3",
+    "clabot": "0.0.4",
     "grunt-cli": "0.1.6",
     "grunt": "~0.4.0",
     "grunt-contrib-coffee": "~0.6.2"

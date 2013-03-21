@@ -13,4 +13,6 @@ exports = module.exports = form(
   field('tel').trim().required()
   field('fax').trim()
   field('signature').trim().equals('I AGREE')
+  field('project').trim().required()
+  field('kind').trim().required()
 )

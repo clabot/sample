@@ -17,19 +17,7 @@ exports.save = (req, res) ->
     console.log 'Invalid form data received'
     res.send 400, req.form.errors or 'Invalid form data received'
   else
-    form = _.pick req.form, [
-      'name'
-      'email'
-      'github'
-      'address'
-      'country'
-      'tel'
-      'fax'
-      'signature'
-      'project'
-      'kind'
-    ]
-
+    form = req.form
     db.view 'contractors/github', (err, docs) ->
       update = _.find docs, (doc) ->
         if doc.key is form.github

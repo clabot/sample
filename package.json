@@ -32,7 +32,14 @@
     "clabot": "0.0.4",
     "grunt-cli": "0.1.6",
     "grunt": "~0.4.0",
-    "grunt-contrib-coffee": "~0.6.2"
+    "grunt-contrib-coffee": "~0.6.2",
+    "forms": "~0.1.4",
+    "connect-assets": "~2.4.0",
+    "jade": "~0.28.2",
+    "cradle": "~0.6.4",
+    "lodash": "~1.0.1",
+    "express": "~2.5.11",
+    "express-form": "~0.7.2"
   },
   "keywords": [
     "CLA",

@@ -1,0 +1,58 @@
+doctype 5
+html(lang="en")
+  head
+    title clabot - CLA Formular
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi')
+    != css('lib/bootstrap.min')
+body
+  div.container
+    form
+      fieldset
+        legend
+          a(href=url) #{agreement}
+        | Electronically confirming your agreement with this license allows us to accept your contribution immediately.
+        | Alternatively you may sign the contract and send it in by postal mail, email, or fax.
+        div.control-group
+          label.control-label(for='name') Full Name
+          div.controls
+            input.span12(id='name', name='name', type='text', placeholder='John Doe', required)
+        div.control-group
+          label.control-label(for='email') E-Mail Address
+          div.controls
+            input.span12(id='email', name='email', type='email', placeholder='john@doe.com', required)
+        div.control-group
+          label.control-label(for='github') GitHub Username
+          div.controls
+            input.span12(id='github', name='github', type='text', placeholder='octocat', required)
+        div.control-group
+          label.control-label(for='address') Mailing Address
+          div.controls
+            textarea.span12(id='address', name='address', rows=3, style='resize:none', placeholder='Street Nr., City, ZIP-Code', required)
+        div.control-group
+          label.control-label(for='country') Country
+          div.controls
+            input.span12(id='country', name='country', type='text', placeholder='United States', required)
+        div.control-group
+          label.control-label(for='tel') Telephone Number
+          div.controls
+            input.span12(id='tel', name='tel', type='tel', placeholder='1 (555) 555-5555', required)
+        div.control-group
+          label.control-label(for='fax') Fax Number (optional)
+          div.controls
+            input.span12(id='fax', name='fax', type='tel', placeholder='1 (444) 444-4444')
+        div.control-group
+          label.control-label(for='signature') Electronic Signature
+          div.controls
+            span.help-block
+              | Type "I AGREE" to accept the&nbsp;
+              a(href=url) #{agreement}
+              |  above.
+            input.span12(id='signature', name='signature', type='text', required)
+        input(type='hidden', id='project', name='project', value=project)
+        input(type='hidden', id='kind', name='kind', value=kind)
+        div.form-actions
+          button.btn.btn-primary.span12(type='submit', disabled) Submit
+  script(type='text/javascript', src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js")
+  != js('lib/nod.min')
+  != js('site')
+

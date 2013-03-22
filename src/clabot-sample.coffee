@@ -10,7 +10,7 @@ app = require('clabot').createApp
   getContractors: data.getContractors
   token: process.env.GITHUB_TOKEN
   templateData:
-    link: 'http://clabot.github.com/cla'
+    link: 'http://clabot.github.com/individual.html'
     maintainer: 'boennemann'
   secrets:
     clabot:

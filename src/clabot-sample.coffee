@@ -15,6 +15,7 @@ app = require('clabot').createApp
   secrets:
     clabot:
       sandbox: process.env.HUB_SECRET
+      clabot: process.env.HUB_SECRET
 
 app.use require('connect-assets')()
 app.use(express.compress());
